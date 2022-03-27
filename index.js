@@ -10,9 +10,9 @@ const client = new DiscordJS.Client({
     ]
 })
 
-const TOKEN = OTU1MjU5ODM4NzM5Mzk0NjUw.YjfFDQ.vQeHCpZ1AVKXJSJuHcN7mWUZuPY
+const config = require('./config.json');
 
-client.login(TOKEN)
+client.login(config.token)
 
 const app = express()
 var port = 3000
