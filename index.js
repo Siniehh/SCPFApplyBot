@@ -10,9 +10,7 @@ const client = new DiscordJS.Client({
     ]
 })
 
-const config = require('./config.json');
-
-client.login(config.token)
+client.login(secrets.TOKEN)
 
 const app = express()
 var port = 3000
